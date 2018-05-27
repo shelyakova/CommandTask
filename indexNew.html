@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sorting Form</title>
+	</head>
+	<body>
+		<div id="info" align="center">
+			<form name="form1" method="post">
+				<table>
+					<tr>
+						<td><label for="name">Имя</label></td>
+						<td><input id="name" type="text" name="name"></td>
+					</tr>
+					<tr>
+						<td><label for="surname">Фамилия</label></td>
+						<td><input id="surname" type="text" name="surname"></td>
+					</tr>
+					<tr>
+						<td><label for="age">Возраст</label></td>
+						<td><input id="age" type="number" name="age"></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="button" id="start" value="Внести данные">
+						</td>
+					</tr>
+				</table>
+				<br>
+				<br>
+				<br>
+			</form>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div id="sortir" align="center">
+			<form name="form2" method="post">
+				<label for="sort">Метод сортировки</label>
+				<select id="sort">
+					<option value="" selected="">(выбрать)</option>
+					<option value="name">По имени</option>
+					<option value="surname">По фамилии</option>
+					<option value="age">По возрасту</option>
+				</select>
+			</form>
+		</div>
+			
+		<br>
+		<br>
+		<br>
+		<br>
+			
+		<table cellspacing="3" id="result" align="center"></table>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
